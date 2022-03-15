@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web-design knowledge for Beginners</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+      <section class="header">
+          <nav>
+              <a href="index.html" class="logo">SP DE<span>S</span>IGN<span>S</span></a>
+              <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                  <ul>
+                      <li><a href="index.html">HOME</a></li>
+                      <li><a href="about.html">ABOUT</a></li>
+                      <li><a href="course.html">COURSE</a></li>
+                      <li><a href="contact.html">CONTACT</a></li>
+                  </ul>
+              </div>
+              <i class="fa fa-bars"onclick="showMenu()"></i>
+          </nav>
+
+          <div class="text-box">
+              <h1>Hello,</h1>
+              <h1>Welcome To </h1>
+              <h1 class="ss">SP Web-De<span>s</span>ign<span>s</span></h1>
+              <p>Making website is now one of the intresting thing in the world <br>you just need to learn Html, Css, Javascript </p>
+
+              <a href="#" type="button" class="hero-btn">Know more</a>
+          </div>
+
+      </section>  
+
+      <section class="course">
+
+          <h1>Courses for Web development</h1>
+
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque ut iure suscipit praesentium dolorem distinctio maiores facere iste accusamus laborum officiis molestiae neque quis natus ullam expedita, eum eaque libero itaque quam nobis quibusdam sequi.</p>
+
+         <div class="row">
+             <div class="course-col">
+                 <h3>HTML</h3>
+                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae nulla nesciunt consequuntur neque quam cum consequatur quasi distinctio dolorem iusto!</p>
+             </div>
+             <div class="course-col">
+                <h3>CSS</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae nulla nesciunt consequuntur neque quam cum consequatur quasi distinctio dolorem iusto!</p>
+            </div>
+            <div class="course-col">
+                <h3>JAVASCRIPT</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae nulla nesciunt consequuntur neque quam cum consequatur quasi distinctio dolorem iusto!</p>
+            </div>
+         </div>
+      </section>
+
+      <section class="framework">
+         <h1>Frontend Frameworks and Libraries</h1>
+         <p>Framework is a software framework that is designed to support the development of web applications including web services, web resources, and web APIs.</p>
+         <div class="row">
+             <div class="frame-rol">
+                 <img src="ruby.png" alt="">
+                 <h3> Ruby on Rails</h3>
+                 <p>Ruby on Rails is an extremely productive web application framework written by David Heinemeier Hansson.</p>
+             </div>
+             <div class="frame-rol">
+                <img src="django.jpeg" alt="">
+                <h3>Django</h3>
+                <p>It was invented to meet fast-moving newsroom deadlines while satisfying the tough requirements of experienced Web developers.</p>
+            </div>
+            <div class="frame-rol">
+                <img src="angular.png" alt="">
+                <h3>Angular JS</h3>
+                <p>It is a framework to build large scale and high-performance web applications while keeping them as easy-to-maintain.</p>
+            </div>
+         </div>
+      </section>
+
+      <section class="cta">
+          <h1>Contact for more information and knowledge</h1>
+          <a href="" class="hero-btn">Contact Us</a>
+
+      </section>
+
+      <section class="footer">
+          <h4>About Us</h4>
+          <p>We are here for your help, problem and query about Web-developement</p>
+          <div class="icons">
+            <a href="https://www.instagram.com/shree_p.07/"><img src="https://img.icons8.com/fluency/50/000000/facebook-new.png" class="sm"/></a> 
+            <img src="https://img.icons8.com/fluency/50/000000/instagram-new.png" class="sm"/>
+            <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" class="sm"/>
+            <img src="https://img.icons8.com/fluency/48/000000/youtube-play.png" class="sm"/>
+          </div>
+          <p>Made By Shrirang Parasbone</p>
+          <div class="em">
+            © 2020 Copyright:
+            <a href="shreeparasbone23@gmail.com">shreeparasbone23@gmail.com</a>
+          </div>
+      </section>
+
+      
+ <script>
+     var navlinks = document.getElementById("navlinks");
+     function showMenu(){
+         navlinks.style.right = "0";
+     }
+     function hideMenu(){
+         navlinks.style.right = "-200px";
+     }
+
+ </script>     
+       
+</body>
+</html>

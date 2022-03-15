@@ -1,0 +1,348 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(back1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+nav{
+    display: flex;
+    padding: 1% 5%;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{   
+    font-family: 'Montserrat', sans-serif;
+    color:#fff;
+    text-decoration: none;
+    font-size: 20px;
+
+}
+.logo span{
+    color: crimson;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color:#fff;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: crimson;
+    display: block;
+    margin: auto;
+    transition: .5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+
+}
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+     top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1 {
+    text-align: center;
+	display: block;
+	font-size: 52px;
+}
+.ss {
+    color: rgb(255, 139, 6);
+    text-shadow: 4px 4px 10px rgb(32, 31, 31);
+}
+.text-box p{
+    margin: 40px 0px 20px 0px;
+    font-size: 25px;
+    line-height: 30px;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid white;
+    padding: 6px 15px;
+    font-size: 15px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+    border-radius: 20px;
+}
+
+nav .fa{
+    display: none;
+}
+
+
+@media(max-width:700px){
+    .text-box h1 {
+
+        /* text-align: center;
+        display: block; */
+        font-size: 30px;
+    }
+    .nav-links ul li{
+        display: block;
+
+    }
+    .nav-links{
+        position: fixed;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right:-200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+        
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        font-size: 22px;
+        cursor: pointer;
+        margin: 10px;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+    .text-box p{
+        margin: 30px 0px 20px 0px;
+        font-size: 15px;
+        line-height: 15px;
+    }
+}
+
+.course{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.course h1{
+    font-size: 35px;
+    font-weight: 600;
+}
+.course p{
+    font-size: 14px;
+    line-height: 22px;
+    padding: 10px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.course-col{
+    flex-basis: 31%;
+    background: #fce3e3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.course-col h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0px;
+}
+.course-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.5);
+}
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+}
+.framework{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.frame-rol{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    border-radius: 10px;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+}
+.frame-rol:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.5);
+}
+.frame-rol img{
+    width: 80%;
+    height: 250px;
+    border-radius: 10px;
+}
+.frame-rol p{
+    padding: 0;
+}
+.frame-rol h3{
+    margin-top: 36px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+.cta{
+    margin: 80px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(contact.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    text-align: center;
+    padding: 70px 10px;
+}
+.cta h1{
+    color: white;
+    margin-bottom: 40px;
+    padding: 0;
+    font-size: 35px;
+}
+@media(max-width: 700px){
+    .cta h1{
+        font-size: 20px;
+    }
+}
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    background-color: grey;
+}
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.icons .sm{
+    /* margin: 10px 5px; */
+    cursor: pointer;
+    padding: 18px 0;
+    
+}
+.em a{
+    text-decoration: none;
+    color: black;
+}
+
+.sub-header{
+    height: 40vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(back3.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+.sub-header h1{
+    margin-top: 80px;
+    font-family: 'Montserrat', sans-serif;
+}
+.aboutus{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+.about-col{
+    flex-basis: 48%;
+    padding: 30px 2px;   
+}
+.about-col img{
+    width: 100%;
+
+}
+.about-col h1{
+    padding-top: 0;
+}
+.about-col p{
+    padding: 15px 0 25px;
+}
+.red-btn{
+    border: 1px solid #f44336;
+    background: transparent;
+    color: black;
+}
+.location{
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+
+}
+.location iframe{
+    width: 100%;
+}
+.contactus{
+    width: 80%;
+    margin: auto;
+}
+.contact-rol{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+
+}
+.contact-rol div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+
+}
+.sk{
+    margin-right: 20px;
+}
+.contact-rol div p{
+    padding: 0;
+
+}
+.contact-rol div h5{
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-weight: 400;
+}
+.contact-rol input, .contact-rol textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}

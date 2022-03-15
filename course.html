@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate Website Platform</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+      <section class="sub-header">
+          <nav>
+              <a href="index.html" class="logo">SP DE<span>S</span>IGN<span>S</span></a>
+              <div class="nav-links" id="navlinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                  <ul>
+                      <li><a href="index.html">HOME</a></li>
+                      <li><a href="about.html">ABOUT</a></li>
+                      <li><a href="course.html">COURSE</a></li>
+                      <li><a href="contact.html">CONTACT</a></li>
+                  </ul>
+              </div>
+              <i class="fa fa-bars"onclick="showMenu()"></i>
+          </nav>
+          <h1>Courses for Web-developement</h1>
+      </section>
+
+      <section class="course">
+
+        <h1>Courses for Web development</h1>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque ut iure suscipit praesentium dolorem distinctio maiores facere iste accusamus laborum officiis molestiae neque quis natus ullam expedita, eum eaque libero itaque quam nobis quibusdam sequi.</p>
+
+       <div class="row">
+           <div class="course-col">
+               <h3>HTML</h3>
+               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae nulla nesciunt consequuntur neque quam cum consequatur quasi distinctio dolorem iusto!</p>
+           </div>
+           <div class="course-col">
+              <h3>CSS</h3>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae nulla nesciunt consequuntur neque quam cum consequatur quasi distinctio dolorem iusto!</p>
+          </div>
+          <div class="course-col">
+              <h3>JAVASCRIPT</h3>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae nulla nesciunt consequuntur neque quam cum consequatur quasi distinctio dolorem iusto!</p>
+          </div>
+       </div>
+    </section>
+
+      
+
+
+
+
+          <section class="footer">
+            <h4>About Us</h4>
+            <p>We are here for your help, problem and query about Web-developement</p>
+            <div class="icons">
+              <img src="https://img.icons8.com/fluency/50/000000/facebook-new.png" class="sm"/>
+              <img src="https://img.icons8.com/fluency/50/000000/instagram-new.png" class="sm"/>
+              <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" class="sm"/>
+              <img src="https://img.icons8.com/fluency/48/000000/youtube-play.png" class="sm"/>
+            </div>
+            <p>Made By Shrirang Parasbone</p>
+            <div class="em">
+              © 2020 Copyright:
+              <a href="shreeparasbone23@gmail.com">shreeparasbone23@gmail.com</a>
+            </div>
+        </section>
+  
+        
+   <script>
+       var navlinks = document.getElementById("navlinks");
+       function showMenu(){
+           navlinks.style.right = "0";
+       }
+       function hideMenu(){
+           navlinks.style.right = "-200px";
+       }
+  
+   </script>     
+         
+  </body>
+  </html>
